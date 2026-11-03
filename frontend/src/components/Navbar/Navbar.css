@@ -1,68 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
-
 .navbar {
-    padding: 10px;
-    margin-top: 10px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    font-family: Outfit;
+    align-items: center;
 }
 
-.navbar .navbar-logo {
-    width: 10vw;
+.navbar .logo {
+    width: 150px;
 }
 
-.navbar .navbar-menu {
+.navbar-menu {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 30vw;
-}
-
-.navbar li {
     list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
 }
 
-.navbar .navbar-right {
+.navbar-right {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 20vw;
+    align-items: center;
+    gap: 40px;
 }
 
 .navbar-basket-icon {
     position: relative;
 }
 
-.navbar-basket-icon .dot {
+.navbar-search-icon .dot {
     position: absolute;
     min-width: 10px;
     min-height: 10px;
     background-color: tomato;
     border-radius: 5px;
-    top: -7px;
-    right: -7px;
-}
-
-.navbar-signin {
-    border: 1px solid black;
-    border-radius: 25px;
-    width: 8vw;
-    height: 10vh;
-    text-align: center;
-}
-
-.navbar-signin:hover {
-    cursor: pointer;
-    color: tomato;
+    top: -8px;
+    right: -8px;
 }
 
 .navbar .active {
-    padding-bottom: 5px;
-    text-decoration: 2px underline;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
 }
 
 .navbar li  {
     cursor: pointer;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
 }
