@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+
+.navbar {
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: Outfit;
+}
+
+.navbar .navbar-logo {
+    width: 10vw;
+}
+
+.navbar .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 30vw;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar .navbar-right {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 20vw;
+}
+
+.navbar-basket-icon {
+    position: relative;
+}
+
+.navbar-basket-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -7px;
+    right: -7px;
+}
+
+.navbar-signin {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 8vw;
+    height: 10vh;
+    text-align: center;
+}
+
+.navbar-signin:hover {
+    cursor: pointer;
+    color: tomato;
+}
+
+.navbar .active {
+    padding-bottom: 5px;
+    text-decoration: 2px underline;
+}
+
+.navbar li  {
+    cursor: pointer;
+}
