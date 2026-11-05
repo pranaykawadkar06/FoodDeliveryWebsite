@@ -21,11 +21,26 @@ const StoreContextProvider = (props) => {
         setCartItems((prev) => ({...prev, [itemId]:prev[itemId]-1}))
     }
 
+    const cartTotal = () => {
+        const total = food_list.reduce((itemsTotal, currItem) => {
+            const quantity = cartItems[currItem._id] || 0;
+            return itemsTotal + (quantity * currItem.price);
+        }, 0);
+        return total;
+    }
+
+
+    
+    console.log(cartItems);
+    console.log(cartTotal);
+    
+
     const contextValue = {
         food_list,
         addToCart,
         removeFromCart,
-        cartItems
+        cartItems,
+        cartTotal
     }
 
     return (
