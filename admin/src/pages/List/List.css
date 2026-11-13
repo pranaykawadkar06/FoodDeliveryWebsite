@@ -1,0 +1,46 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 0.5fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+}
+
+.list-table-format img {
+    width: 50px;
+}
+
+
+@media (max-width: 650px) {
+    .list-table-format {
+        grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr;
+        gap: 10px;
+    }
+
+    .list-table-format img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .list-table-format {
+        grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr;
+        gap: 8px;
+    }
+
+    .list-table-format img {
+        width: 35px;
+    }
+
+    .list-table-format.list-table-format.title {
+        display: none;
+    }
+}
